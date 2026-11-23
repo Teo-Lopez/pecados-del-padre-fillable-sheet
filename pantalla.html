@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pantalla del jugador — Los Pecados del Padre</title>
+    <meta
+      name="description"
+      content="Referencia rápida para partidas de Los Pecados del Padre."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page guide screen">
+      <header class="guide-top">
+        <div>
+          <p class="eyebrow">Los Pecados del Padre</p>
+          <h1>Pantalla del jugador</h1>
+          <p class="lede">Consulta rápida en mesa: tiradas, pecados, deuda y dones.</p>
+        </div>
+        <div class="nav-row">
+          <a class="nav-btn secondary" href="guia.html">Guía de creación</a>
+          <a class="nav-btn" href="index.html">Ir a la ficha</a>
+        </div>
+      </header>
+
+      <nav class="toc" aria-label="Secciones">
+        <a href="#tiradas">Tiradas</a>
+        <a href="#pecados">Pecados</a>
+        <a href="#conexiones">Conexiones</a>
+        <a href="#relaciones">Relaciones</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#deuda">Deuda</a>
+        <a href="#dones">Dones</a>
+      </nav>
+
+      <section id="tiradas">
+        <h2>Tiradas</h2>
+        <p>Roba una carta. Cuenta el valor + modificadores.</p>
+        <ul class="compact">
+          <li><strong>Ascenso:</strong> + valor de la conexión si el palo coincide.</li>
+          <li><strong>Caída:</strong> − por entorno, efectos o presión de Deuda / Señor Oscuro.</li>
+        </ul>
+        <h3>Virtud opuesta</h3>
+        <p>
+          Antes de actuar con tu virtud: desafío de <strong>Resistencia</strong>
+          con caída <strong>Deuda + 2</strong>. Si fallas, no puedes hacer la acción.
+        </p>
+      </section>
+
+      <section id="pecados">
+        <h2>Pecados, virtudes y dones iniciales</h2>
+        <p>As / comodín = eliges pecado. Pereza = elección o «¡A la mierda!».</p>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Pecado</th>
+                <th>Cartas</th>
+                <th>Virtud</th>
+                <th>Don inicial</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Avaricia</td>
+                <td>7–6</td>
+                <td>Generosidad</td>
+                <td><strong>Dinero:</strong> +2 si el dinero resuelve el trato/tarea</td>
+              </tr>
+              <tr>
+                <td>Envidia</td>
+                <td>3–2</td>
+                <td>Caridad</td>
+                <td><strong>Baratijas:</strong> +1 al quitarle algo a alguien</td>
+              </tr>
+              <tr>
+                <td>Gula</td>
+                <td>9–8</td>
+                <td>Templanza</td>
+                <td><strong>Atracón:</strong> cura 3 heridas (sales de escena; vuelves en la siguiente)</td>
+              </tr>
+              <tr>
+                <td>Ira</td>
+                <td>5–4</td>
+                <td>Paciencia</td>
+                <td><strong>Pintan bastos:</strong> +2 al causar daño</td>
+              </tr>
+              <tr>
+                <td>Lujuria</td>
+                <td>10–J</td>
+                <td>Castidad</td>
+                <td><strong>Atractivo:</strong> +2 si usas sexualidad para conseguir algo</td>
+              </tr>
+              <tr>
+                <td>Pereza</td>
+                <td>—</td>
+                <td>Diligencia</td>
+                <td><strong>No hacer nada:</strong> descarta ≤3 cartas → +1/carta al compañero; si lideras esfuerzo colectivo, caída 3</td>
+              </tr>
+              <tr>
+                <td>Soberbia</td>
+                <td>K–Q</td>
+                <td>Humildad</td>
+                <td><strong>Estatus:</strong> +1 al usar tu posición social</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section id="conexiones">
+        <h2>Conexiones</h2>
+        <p>Máx. 4. Al jugar ese palo: ascenso = valor de la conexión.</p>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>Palo</th><th>Conexión</th><th>Tema</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>♣</td><td>Caos</td><td>Destruir el orden, provocar, violencia</td></tr>
+              <tr><td>♦</td><td>Influencia</td><td>Manipular, mentir, ventaja social</td></tr>
+              <tr><td>♠</td><td>Oscuridad</td><td>Alma podrida, poder místico, Señor Oscuro</td></tr>
+              <tr><td>♥</td><td>Pasión</td><td>Apego, descontrol, venganza, resentimiento</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section id="relaciones">
+        <h2>Relaciones (por palo)</h2>
+        <ul class="compact">
+          <li><strong>Control ♦:</strong> dominio. PNJ: 1 habilidad a 3 (resto a 1). PJ: 1 orden/sesión; cumple o ignora; luego ambos barajan las 3 cartas superiores del descarte.</li>
+          <li><strong>Hostilidad ♣:</strong> +1 a Pasión o Caos en escenas con esa relación.</li>
+          <li><strong>Interés ♠:</strong> +1 a Oscuridad o Influencia en escenas con esa relación.</li>
+          <li><strong>Intimidad ♥:</strong> tras intimar/descansar con la relación, recuperas 1 herida.</li>
+        </ul>
+      </section>
+
+      <section id="habilidades">
+        <h2>Habilidades y heridas</h2>
+        <p>Nivel 1–3 = heridas que aguanta. Llena = no puedes usarla hasta curar.</p>
+        <ul class="compact two-col">
+          <li><strong>Combate:</strong> pelear / herir (defensa: Combate o Destreza)</li>
+          <li><strong>Destreza:</strong> agilidad, correr, saltar</li>
+          <li><strong>Infiltración:</strong> sigilo (vs Percepción)</li>
+          <li><strong>Labia:</strong> mentir, seducir, intimidar (vs Labia o Resistencia)</li>
+          <li><strong>Manitas:</strong> construir, hackear, reparar</li>
+          <li><strong>Ocultismo:</strong> rituales, magia, superstición</li>
+          <li><strong>Percepción:</strong> sentidos, registrar, detectar</li>
+          <li><strong>Resistencia:</strong> venenos, ilusiones; comodín vs efectos</li>
+          <li><strong>Saber:</strong> datos, ciencia, memoria</li>
+          <li><strong>Supervivencia:</strong> rastrear, calle, refugio, clima</li>
+        </ul>
+      </section>
+
+      <section id="deuda">
+        <h2>Deuda</h2>
+        <ul class="compact">
+          <li>Inicio: <strong>2</strong> · creación máx. <strong>5</strong> · a <strong>10</strong> te desvaneces.</li>
+          <li>Negarte al Señor Oscuro: caída = tu Deuda.</li>
+          <li><strong>Deuda 0:</strong> libre mientras no pidas favores ni actives dones.</li>
+        </ul>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>Evento</th><th>Deuda</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Subir conexión / habilidad (creación)</td><td>+1 / nivel</td></tr>
+              <tr><td>Don de tu pecado / de otro (creación)</td><td>+2 / +3</td></tr>
+              <tr><td>Fallar misión · morir y resucitar · usar Deuda como ascenso · favor al Señor Oscuro · barajar descartes</td><td>+1</td></tr>
+              <tr><td>Completar misión</td><td>−1</td></tr>
+              <tr><td>Favores del Señor de las Almas</td><td>− variable</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section id="dones">
+        <h2>Dones oscuros</h2>
+        <p>Salvo que diga otra cosa: descarta cartas + desafío a <strong>Dificultad 1</strong>.</p>
+
+        <h3>Avaricia</h3>
+        <ul class="compact">
+          <li><strong>Acaparador:</strong> tras un desafío, descarta 3 → guarda 1 carta usada para luego.</li>
+          <li><strong>Antojos:</strong> 2 + Labia → la víctima ansía un objeto. Fallo: 1 herida a Labia.</li>
+          <li><strong>Duplicación:</strong> 2 + Manitas (4 si es mágico) → copia un objeto. Desaparece al fin de escena salvo +1 Deuda. Fallo: copia corrupta.</li>
+        </ul>
+
+        <h3>Envidia</h3>
+        <ul class="compact">
+          <li><strong>Copión:</strong> descarta 3 → usa la carta superior del descarte de otro / SdA.</li>
+          <li><strong>¡Quiero eso!:</strong> 2 + Infiltración → objeto a la vista a tu mano. Fallo: va a otro sitio.</li>
+          <li><strong>Replicar don:</strong> tras ver un don, 2 + Ocultismo → lo copias esta escena. Fallo: 1 herida a Ocultismo.</li>
+        </ul>
+
+        <h3>Gula</h3>
+        <ul class="compact">
+          <li><strong>Abastecerse:</strong> 3 + Supervivencia → comida cura 1 (2 con As). Fallo: podrida.</li>
+          <li><strong>Insaciable:</strong> 2 + Ocultismo → vacío/locura en la víctima esta escena. Fallo: 1 herida a Ocultismo.</li>
+          <li><strong>Siempre más:</strong> descarta 1 del mazo → +1 (hasta +4).</li>
+        </ul>
+
+        <h3>Ira</h3>
+        <ul class="compact">
+          <li><strong>Destrucción:</strong> en desafío destructivo, descarta ≤3 → +1 por carta.</li>
+          <li><strong>Furia:</strong> 2 + Labia → el objetivo ataca a todos. Fallo: te odia a ti.</li>
+          <li><strong>Hacer añicos:</strong> 3 + Ocultismo → destruye un objeto. Fallo: 1 herida aleatoria.</li>
+        </ul>
+
+        <h3>Lujuria</h3>
+        <ul class="compact">
+          <li><strong>Atracción instantánea:</strong> descarta 4 → se enamora y hace 1 tarea. +1 Deuda = cualquier orden.</li>
+          <li><strong>Deseos oscuros:</strong> 2 + Labia → sin inhibiciones esta escena. Fallo: 1 herida a Labia.</li>
+          <li><strong>Seducir al mazo:</strong> 2 + habilidad → mira 5, descarta 2, reordena 3.</li>
+        </ul>
+
+        <h3>Pereza</h3>
+        <ul class="compact">
+          <li><strong>Apatía:</strong> 2 + Ocultismo → caída 3 a la víctima hasta fin de escena. Fallo: 1 herida a Ocultismo.</li>
+          <li><strong>Dormir:</strong> 3 + Ocultismo → sueño profundo. +1 Deuda = dura días = Oscuridad. Fallo: sales tú de escena.</li>
+          <li><strong>¡Que me da igual!:</strong> descarta 2 → empate automático.</li>
+        </ul>
+
+        <h3>Soberbia</h3>
+        <ul class="compact">
+          <li><strong>Cara a cara:</strong> descarta hasta sacar J/Q/K/A/comodín y úsala.</li>
+          <li><strong>Mejor que tú:</strong> 2 + Saber → enfrentas con el nivel del rival y +1. Si ganas, +1 Deuda para expulsarlo. Fallo: 1 herida a Labia.</li>
+          <li><strong>Sabelotodo:</strong> 3 + Ocultismo → info vital. Fallo: olvidas algo vital.</li>
+        </ul>
+      </section>
+
+      <footer class="toolbar guide-foot">
+        <div class="nav-row">
+          <a class="nav-btn secondary" href="guia.html">Guía de creación</a>
+          <a class="nav-btn" href="index.html">Volver a la ficha</a>
+        </div>
+        <p class="credit">
+          Referencia no oficial para uso personal · inspirada en © Third Eye Games /
+          Nosolorol.
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>

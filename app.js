@@ -110,33 +110,6 @@ function load() {
   }
 }
 
-function exportJson() {
-  const blob = new Blob([JSON.stringify(readState(), null, 2)], {
-    type: "application/json",
-  });
-  const url = URL.createObjectURL(blob);
-  const a = document.createElement("a");
-  a.href = url;
-  a.download = "pecados-ficha.json";
-  a.click();
-  URL.revokeObjectURL(url);
-  setStatus("JSON exportado.");
-}
-
-function importJson(file) {
-  const reader = new FileReader();
-  reader.onload = () => {
-    try {
-      writeState(JSON.parse(String(reader.result)));
-      save();
-      setStatus("JSON importado y guardado.");
-    } catch {
-      setStatus("El archivo no es un JSON válido.");
-    }
-  };
-  reader.readAsText(file);
-}
-
 function resetSheet() {
   if (!confirm("¿Borrar todos los datos de esta ficha en este navegador?")) {
     return;
@@ -159,10 +132,4 @@ document.addEventListener("input", () => {
 });
 document.addEventListener("change", save);
 
-document.getElementById("exportBtn").addEventListener("click", exportJson);
 document.getElementById("resetBtn").addEventListener("click", resetSheet);
-document.getElementById("importInput").addEventListener("change", (event) => {
-  const file = event.target.files?.[0];
-  if (file) importJson(file);
-  event.target.value = "";
-});

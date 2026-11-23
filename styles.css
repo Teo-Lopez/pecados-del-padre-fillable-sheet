@@ -34,25 +34,12 @@ body {
 .page {
   max-width: 980px;
   margin: 0 auto;
-  background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.55), transparent 180px),
-    linear-gradient(135deg, var(--paper), var(--paper-2));
+  background: var(--paper);
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 22px;
   box-shadow: var(--shadow);
   padding: 1.5rem;
   position: relative;
-  overflow: hidden;
-}
-
-.page::before {
-  content: "";
-  position: absolute;
-  inset: auto -10% -20% 40%;
-  height: 60%;
-  background:
-    radial-gradient(circle, rgba(91, 31, 74, 0.08), transparent 60%);
-  pointer-events: none;
 }
 
 .top {
@@ -334,6 +321,24 @@ a.nav-btn.secondary {
 
 .guide-link {
   margin-top: 0.85rem;
+}
+
+.nav-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.two-col {
+  columns: 2;
+  column-gap: 1.25rem;
+}
+
+@media (max-width: 700px) {
+  .two-col {
+    columns: 1;
+  }
 }
 
 .credit {

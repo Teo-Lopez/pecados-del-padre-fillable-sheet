@@ -16,7 +16,10 @@
         <div class="brand">
           <p class="eyebrow">Third Eye Games</p>
           <h1>Los Pecados<br />del Padre</h1>
-          <a class="nav-btn guide-link" href="guia.html">Guía de creación</a>
+          <div class="nav-row guide-link">
+            <a class="nav-btn" href="pantalla.html">Pantalla del jugador</a>
+            <a class="nav-btn secondary" href="guia.html">Guía de creación</a>
+          </div>
         </div>
         <div class="identity">
           <label>
@@ -192,12 +195,8 @@
       <footer class="toolbar">
         <p id="status" class="status" aria-live="polite">Guardado en este navegador.</p>
         <div class="actions">
+          <a class="nav-btn" href="pantalla.html">Pantalla del jugador</a>
           <a class="nav-btn secondary" href="guia.html">Guía de creación</a>
-          <button type="button" id="exportBtn">Exportar JSON</button>
-          <label class="file-btn">
-            Importar JSON
-            <input type="file" id="importInput" accept="application/json,.json" hidden />
-          </label>
           <button type="button" id="resetBtn" class="danger">Borrar ficha</button>
         </div>
         <p class="credit">

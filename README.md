@@ -4,8 +4,9 @@ Ficha de personaje estática para [GitHub Pages](https://pages.github.com/).
 
 - Se guarda sola en `localStorage` del navegador (sobrevive a recargas).
 - Exportar / importar JSON para copias de seguridad o cambiar de dispositivo.
-- Guía de creación en `guia.html` (enlace desde la ficha).
-- No hay backend ni cuentas.
+- Guía de creación en `guia.html`.
+- Pantalla del jugador (referencia rápida) en `pantalla.html`.
+- No hay backend ni cuentas. Los datos viven en `localStorage`.
 
 ## Local
 
