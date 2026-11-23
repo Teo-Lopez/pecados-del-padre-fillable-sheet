@@ -18,3 +18,4 @@ python3 -m http.server 8080
 
 Ficha no oficial para uso personal, inspirada en *Los Pecados del Padre*
 (© Third Eye Games / Nosolorol).
+# pecados-del-padre-fillable-sheet
