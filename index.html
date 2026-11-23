@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Los Pecados del Padre — Ficha</title>
+    <meta
+      name="description"
+      content="Ficha editable de personaje para Los Pecados del Padre. Los datos se guardan en este navegador."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="top">
+        <div class="brand">
+          <p class="eyebrow">Third Eye Games</p>
+          <h1>Los Pecados<br />del Padre</h1>
+        </div>
+        <div class="identity">
+          <label>
+            <span>Nombre</span>
+            <input type="text" name="nombrepj" autocomplete="off" />
+          </label>
+          <label>
+            <span>Pecado dominante</span>
+            <input type="text" name="pecado_dominante" autocomplete="off" />
+          </label>
+          <label class="narrow">
+            <span>Edad</span>
+            <input type="text" name="edad" autocomplete="off" />
+          </label>
+          <label class="wide">
+            <span>Rasgos</span>
+            <input type="text" name="rasgospj" autocomplete="off" />
+          </label>
+        </div>
+      </header>
+
+      <section class="resources" aria-label="Recursos">
+        <label class="stat">
+          <span>Deuda</span>
+          <input type="text" name="deuda" inputmode="numeric" />
+        </label>
+        <label class="stat">
+          <span>Caos <i aria-hidden="true">♣</i></span>
+          <input type="text" name="Caos" inputmode="numeric" />
+          <input type="checkbox" name="casost" title="Marca de Caos" />
+        </label>
+        <label class="stat">
+          <span>Oscuridad <i aria-hidden="true">♠</i></span>
+          <input type="text" name="oscuridad" inputmode="numeric" />
+          <input type="checkbox" name="oscuridadt" title="Marca de Oscuridad" />
+        </label>
+        <label class="stat">
+          <span>Influencia <i aria-hidden="true">♦</i></span>
+          <input type="text" name="influencia" inputmode="numeric" />
+          <input type="checkbox" name="influenciat" title="Marca de Influencia" />
+        </label>
+        <label class="stat">
+          <span>Pasión <i aria-hidden="true">♥</i></span>
+          <input type="text" name="pasión" inputmode="numeric" />
+          <input type="checkbox" name="pasiónt" title="Marca de Pasión" />
+        </label>
+      </section>
+
+      <div class="columns">
+        <div class="col">
+          <section>
+            <h2>Dones oscuros</h2>
+            <div class="stack">
+              <article class="gift">
+                <label><span>Nombre</span><input type="text" name="nombre1" /></label>
+                <label><span>Efectos</span><textarea name="efectos1" rows="2"></textarea></label>
+              </article>
+              <article class="gift">
+                <label><span>Nombre</span><input type="text" name="nombre2" /></label>
+                <label><span>Efectos</span><textarea name="efectos2" rows="2"></textarea></label>
+              </article>
+              <article class="gift">
+                <label><span>Nombre</span><input type="text" name="nombre" /></label>
+                <label><span>Efectos</span><textarea name="efectos3" rows="2"></textarea></label>
+              </article>
+              <article class="gift">
+                <label><span>Nombre</span><input type="text" name="nombre3" /></label>
+                <label><span>Efectos</span><textarea name="efectos" rows="2"></textarea></label>
+              </article>
+            </div>
+          </section>
+
+          <section>
+            <h2>Relaciones</h2>
+            <div class="stack">
+              <article class="relation">
+                <div class="row">
+                  <label><span>Nombre</span><input type="text" name="nombre31" /></label>
+                  <label class="narrow"><span>Tipo</span><input type="text" name="tipo" /></label>
+                </div>
+                <label><span>Descripción</span><textarea name="descripcion" rows="2"></textarea></label>
+              </article>
+              <article class="relation">
+                <div class="row">
+                  <label><span>Nombre</span><input type="text" name="nombre311" /></label>
+                  <label class="narrow"><span>Tipo</span><input type="text" name="tipo1" /></label>
+                </div>
+                <label><span>Descripción</span><textarea name="descripcion1" rows="2"></textarea></label>
+              </article>
+              <article class="relation">
+                <div class="row">
+                  <label><span>Nombre</span><input type="text" name="nombre312" /></label>
+                  <label class="narrow"><span>Tipo</span><input type="text" name="tipo2" /></label>
+                </div>
+                <label><span>Descripción</span><textarea name="descripcion2" rows="2"></textarea></label>
+              </article>
+              <article class="relation">
+                <div class="row">
+                  <label><span>Nombre</span><input type="text" name="nombre313" /></label>
+                  <label class="narrow"><span>Tipo</span><input type="text" name="tipo3" /></label>
+                </div>
+                <label><span>Descripción</span><textarea name="descripcion3" rows="2"></textarea></label>
+              </article>
+              <article class="relation">
+                <div class="row">
+                  <label><span>Nombre</span><input type="text" name="nombre314" /></label>
+                  <label class="narrow"><span>Tipo</span><input type="text" name="tipo4" /></label>
+                </div>
+                <label><span>Descripción</span><textarea name="descripcion4" rows="2"></textarea></label>
+              </article>
+            </div>
+          </section>
+        </div>
+
+        <div class="col">
+          <section>
+            <h2>Habilidades</h2>
+            <p class="hint">Marca heridas en las casillas de la derecha.</p>
+            <div class="skills" id="skills"></div>
+          </section>
+
+          <section>
+            <h2>Señor Oscuro</h2>
+            <div class="stack">
+              <label>
+                <span>Rasgos</span>
+                <textarea name="descripciónrasgos" rows="2"></textarea>
+              </label>
+              <label>
+                <span>Comunicación</span>
+                <textarea name="municación" rows="2"></textarea>
+              </label>
+              <label>
+                <span>Sacrificios</span>
+                <textarea name="sacrificios" rows="2"></textarea>
+              </label>
+              <label>
+                <span>Metas</span>
+                <textarea name="metas" rows="2"></textarea>
+              </label>
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <section>
+        <h2>Diario de tareas</h2>
+        <p class="hint">Misiones realizadas para tu Señor Oscuro.</p>
+        <div class="missions">
+          <label>
+            <span>Misión 1</span>
+            <textarea name="misión1" rows="2"></textarea>
+            <textarea name="misión11" rows="2"></textarea>
+          </label>
+          <label>
+            <span>Misión 2</span>
+            <textarea name="misión12" rows="2"></textarea>
+            <textarea name="misión112" rows="2"></textarea>
+          </label>
+          <label>
+            <span>Misión 3</span>
+            <textarea name="misión13" rows="2"></textarea>
+            <textarea name="misión113" rows="2"></textarea>
+          </label>
+          <label>
+            <span>Misión 4</span>
+            <textarea name="misión14" rows="2"></textarea>
+            <textarea name="misión114" rows="2"></textarea>
+          </label>
+        </div>
+      </section>
+
+      <footer class="toolbar">
+        <p id="status" class="status" aria-live="polite">Guardado en este navegador.</p>
+        <div class="actions">
+          <button type="button" id="exportBtn">Exportar JSON</button>
+          <label class="file-btn">
+            Importar JSON
+            <input type="file" id="importInput" accept="application/json,.json" hidden />
+          </label>
+          <button type="button" id="resetBtn" class="danger">Borrar ficha</button>
+        </div>
+        <p class="credit">
+          Ficha no oficial para uso personal · inspirada en © Third Eye Games /
+          Nosolorol · Los datos no salen de tu navegador salvo que exportes.
+        </p>
+      </footer>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
