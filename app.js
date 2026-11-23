@@ -26,15 +26,16 @@ function buildSkills() {
     const row = document.createElement("div");
     row.className = "skill";
 
-    const name = document.createElement("div");
+    const name = document.createElement("span");
     name.className = "skill-name";
-    name.innerHTML = `<span>${skill.label}</span>`;
+    name.textContent = skill.label;
+
     const value = document.createElement("input");
     value.type = "text";
+    value.className = "skill-value";
     value.name = skill.valueName;
     value.inputMode = "numeric";
     value.setAttribute("aria-label", `Valor de ${skill.label}`);
-    name.appendChild(value);
 
     const wounds = document.createElement("div");
     wounds.className = "wounds";
@@ -51,7 +52,7 @@ function buildSkills() {
       wounds.appendChild(label);
     }
 
-    row.append(name, wounds);
+    row.append(name, value, wounds);
     frag.appendChild(row);
   }
   skillsEl.appendChild(frag);
